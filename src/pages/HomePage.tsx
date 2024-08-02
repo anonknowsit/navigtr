@@ -8,6 +8,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
+import { Link } from "react-router-dom";
 import Layout from "../components/Layout";
 import { useColorScheme } from "../utils/colorScheme";
 
@@ -60,13 +61,13 @@ const HomePage: React.FC = () => {
             Quick Links
           </Heading>
           <HStack spacing={4}>
-            <Button colorScheme="blue" as="a" href="/dashboard">
+            <Button colorScheme="blue" as={Link} to="/dashboard">
               Go to Dashboard
             </Button>
-            <Button colorScheme="green" as="a" href="/profile">
+            <Button colorScheme="green" as={Link} to="/profile">
               View Profile
             </Button>
-            <Button colorScheme="purple" as="a" href="/settings">
+            <Button colorScheme="purple" as={Link} to="/settings">
               Settings
             </Button>
           </HStack>

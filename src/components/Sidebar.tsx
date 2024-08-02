@@ -23,7 +23,6 @@ import { Link } from "react-router-dom";
 
 const Sidebar: React.FC = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  // Set the sidebar background color to white
   const bgColor = useColorModeValue("white", "gray.800");
   const hoverBgColor = useColorModeValue("gray.200", "gray.700");
 
